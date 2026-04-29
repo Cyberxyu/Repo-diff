@@ -12,6 +12,12 @@ def main():
         "--name", "repo-diff",
         "--add-data", "src;src",
         "--add-data", "font;font",
+        "--hidden-import", "html",
+        "--hidden-import", "html.parser",
+        "--hidden-import", "re",
+        "--hidden-import", "datetime",
+        "--hidden-import", "typing",
+        "--hidden-import", "logging",
         "main.py"
     ]
     print("Running:", " ".join(cmd))
